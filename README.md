@@ -8,3 +8,4 @@
 
 
 #fresh set of lines
+#test auto trigger01
