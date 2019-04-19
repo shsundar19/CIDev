@@ -9,6 +9,6 @@ node {
         sh label: '', script: 'ls'
     }
     stage('email'){
-        mail bcc: '', body: 'Build $BUILD_NUMBER is complete', cc: '', from: '', replyTo: '', subject: 'Build $BUILD_NUMBER is complete', to: 'shubha.sundar@oracle.com'
+        always {mail bcc: '', body: 'Build $BUILD_NUMBER is complete', cc: '', from: '', replyTo: '', subject: 'Build $BUILD_NUMBER is complete', to: 'shubha.sundar@oracle.com'}
     }
 }
