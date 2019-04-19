@@ -1,4 +1,4 @@
-job('simpleTrigger') {
+job('simpleTrigger01') {
   parameters {
     	stringParam('Object', 'Undescribed', 'This paramter describes a type of object')
   }
@@ -10,6 +10,6 @@ job('simpleTrigger') {
 
 
 publishers {
-  	downstream('simpleJobWithParameter', 'SUCCESS')
+  	downstream('simpleJobWithParameter01', 'SUCCESS')
 }
 }
