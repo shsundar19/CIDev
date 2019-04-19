@@ -5,4 +5,10 @@ node {
     stage('Read') {
         sh label: '', script: 'cat JenDSL'
     }
+    stage ('list') {
+        sh label: '', script: 'ls'
+    }
+    stage('email'){
+        mail bcc: '', body: 'Build $BUILD_NUMBER is complete', cc: '', from: '', replyTo: '', subject: 'Build $BUILD_NUMBER is complete', to: 'shubha.sundar@oracle.com'
+    }
 }
