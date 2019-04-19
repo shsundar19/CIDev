@@ -1,0 +1,8 @@
+node {
+    stage('Clone') {
+       git 'https://github.com/shsundar19/CIDev.git'
+    }
+    stage('Read') {
+        sh label: '', script: 'cat JenDSL'
+    }
+}
