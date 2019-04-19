@@ -10,6 +10,6 @@ job('simpleTrigger01') {
 
 
 publishers {
-  	downstream('simpleJobWithParameter01', 'SUCCESS')
+  	downstream('simpleJobWithParameter', 'SUCCESS')
 }
 }
